@@ -1,0 +1,9 @@
+package: app.tar
+---
+profiles:
+  - main
+---
+stages:
+  deploy:
+    - tar -cvf app.tar app.py requirements.txt calibri.ttf run.sh templates/
+
